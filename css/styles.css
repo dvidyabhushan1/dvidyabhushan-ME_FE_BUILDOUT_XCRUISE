@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Bar */
+.navbar {
+    background-color: #000033;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+ /* Hero Secter */
+ .hero{
+    background-image: url('https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png');
+   background-size: cover;
+   background-position: center;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+   padding: 0 20px;
+}
+.hero h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.hero button{
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Discover Section  */
+.discover{
+    padding: 40px 30px;
+}
+.heading h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.heading p{
+    margin-bottom: 20px;
+}
+.popular{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pills{
+    display: flex;
+    gap: 15px;
+}
+.pill{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 6px;
+    background-color: white;            
+}
+.pill img{
+    width: 20;
+    height: 20px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  }
+.cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    border-radius: 6px;
+}
+.card p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* contact*/
+#contact {
+    background-color: #f8f8f8;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  #contact h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #000033;
+  }
+  
+  .contact_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact_block {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+  }
+  
+  .contact_block h4 {
+    font-size: 18px;
+    color: #000033;
+    margin-bottom: 10px;
+  }
+  
+  .contact_block p {
+    font-size: 14px;
+    margin: 6px 0;
+  }
+  .contact_block {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    background-color: white; /* box look */
+    border: 1px solid #ddd;   /* light border */
+    border-radius: 8px;       /* rounded corners */
+    padding: 20px;            /* inner spacing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* soft shadow */
+  }
+ /* Main Footer */
+.main-footer {
+    background-color: #000033;
+    color: white;
+    padding: 40px 20px 10px;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-content > div {
+    flex: 1 1 200px;
+  }
+  
+  .footer-content h4 {
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .footer_rights {
+    border-top: 1px solid #222;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+  }
+/* Responsive design */
+/* tablet */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero h1{
+        font-size: 24px;
+    }
+    .hero button{
+     font-size: 14px;
+     padding: 10px 20px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    .contact_block {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .footer-content > div {
+        margin-bottom: 20px;
+      }
+    
+      .social-icons {
+        justify-content: center;
+      }
+}
+/* Mobile */
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+    hero h1{
+        font-size: 20px;
+    }
+    .hero button{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+      }
+    
+      .heading h2 {
+        font-size: 20px;
+      }
+    
+      .pill span {
+        font-size: 12px;
+      }
+      .social-icons {
+        gap: 15px;
+      }
+    
+      .footer_rights {
+        font-size: 12px;
+      }  
+}
